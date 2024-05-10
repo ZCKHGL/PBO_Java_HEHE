@@ -24,7 +24,7 @@ public class Latihan7 {
         // Menggunakan kelas Random untuk menghasilkan bilangan acak
         Random mesinRandom = new Random();
         int jumlahPengulangan = mesinRandom.nextInt(20) + 1; // Menghasilkan bilangan dari 1 sampai 20
-        
+
         System.out.println("-----------------------------------------------------------------------------");
         System.out.println("\nJumlah pengulangan yang didapatkan = " + jumlahPengulangan);
 
