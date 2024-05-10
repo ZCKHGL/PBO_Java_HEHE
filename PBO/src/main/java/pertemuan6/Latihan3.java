@@ -5,6 +5,8 @@
  */
 package pertemuan6;
 
+import java.util.Scanner;
+
 /**
  *
  * @author A-12
@@ -15,24 +17,47 @@ public class Latihan3 {
         int people = 30;
         int cars = 40;
         int buses = 15;
+        
+        System.out.println("Nilai people adalah " + people);
+        System.out.println("Nilai cars adalah " + cars);
+        System.out.println("Nilai buses adalah " + buses);
+        
+        System.out.println("--------------------------------------------------");
+
+        Scanner inputScanner = new Scanner(System.in);
+        System.out.println("Silakan input nilai baru untuk people ");
+        people = inputScanner.nextInt();
+        System.out.println("Silakan input nilai baru untuk cars ");
+        cars = inputScanner.nextInt();
+        System.out.println("Silakan input nilai baru untuk buses ");
+        buses = inputScanner.nextInt();
+        
+        System.out.println("--------------------------------------------------");
+        
+        System.out.println("Nilai baru people adalah " + people);
+        System.out.println("Nilai baru cars adalah " + cars);
+        System.out.println("Nilai baru buses adalah " + buses);
+        
+        System.out.println("--------------------------------------------------");
+        
         if (cars > people) {
-            System.out.println("We should take the cars.");
+            System.out.println("\n\tKita sebaiknya mengambil mobil.");
         } else if (cars < people) {
-            System.out.println("We should not take the cars.");
+            System.out.println("\tKita sebaiknya tidak mengambil mobil.");
         } else {
-            System.out.println("We can't decide.");
+            System.out.println("\tKita tidak bisa memutuskan.");
         }
         if (buses > cars) {
-            System.out.println("That's too many buses.");
+            System.out.println("\tItu terlalu banyak bis.");
         } else if (buses < cars) {
-            System.out.println("Maybe we could take the buses.");
+            System.out.println("\tMungkin kita bisa mengambil bis.");
         } else {
-            System.out.println("We still can't decide.");
+             System.out.println("\tKita masih belum bisa memutuskan.");
         }
         if (people > buses) {
-            System.out.println("All right, let's just take the buses.");
+            System.out.println("\tBaiklah, mari kita ambil bis saja.");
         } else {
-            System.out.println("Fine, let's stay home then.");
+            System.out.println("\tBaiklah, kita tinggal di rumah saja.");
         }
     }
 }
