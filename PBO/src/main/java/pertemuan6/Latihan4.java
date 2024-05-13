@@ -45,6 +45,6 @@ public class Latihan4 {
 
         System.out.println("Hari ini adalah: " + hari);
 
-        input.close(); // Tutup scanner setelah menggunakannya
+        input.close(); // menutup scanner setelah menggunakannya
     }
 }
